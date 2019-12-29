@@ -2,7 +2,7 @@
   <div class="container">
     <div class="container__wrapper">
       <h1>Add new post</h1>
-      <AppForm></AppForm>
+      <AppForm @submit="addNewPost"></AppForm>
     </div>
   </div>
 </template>
@@ -15,6 +15,11 @@ export default {
   layout: "default",
   components: {
     AppForm
+  },
+  methods:{
+    addNewPost(postData){
+        this.$store.dispatch('addNewPost', postData)
+    },
   }
 };
 </script>

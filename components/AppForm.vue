@@ -40,10 +40,6 @@ export default {
       // Save the post
       this.$emit('submit', this.editedPost)
     },
-    onCancel() {
-      // Navigate back
-      this.$router.push("/admin");
-    }
   }
 };
 </script>
