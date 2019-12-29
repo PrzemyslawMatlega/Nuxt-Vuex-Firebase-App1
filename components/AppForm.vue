@@ -1,11 +1,11 @@
 <template>
   <form @submit.prevent="onSave">
     <AppFormInput v-model="editedPost.title">Title</AppFormInput>
-    <AppFormInput v-model="editedPost.thumbnail">Thumbnail Link</AppFormInput>
+    <!-- <AppFormInput v-model="editedPost.thumbnail">Thumbnail Link</AppFormInput> -->
     <AppFormInput
       control-type="textarea"
       v-model="editedPost.content">Content</AppFormInput>
-     <v-btn color="success"  x-large dark type="submit"> Add post!</v-btn>
+     <v-btn color="success" x-large dark type="submit"> Add post!</v-btn>
   </form>
 </template>
 
