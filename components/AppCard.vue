@@ -15,9 +15,11 @@
       </v-card-text>
 
       <v-card-actions>
-        <v-btn color="orange" text>Share</v-btn>
+        <!-- <v-btn color="orange" text>Share</v-btn> -->
 
-        <v-btn color="orange" text>Explore</v-btn>
+        <nuxt-link tag="div" :to="`/posts/${singlePost.id}`">
+          <v-btn color="orange" text>Explore</v-btn>
+        </nuxt-link>
       </v-card-actions>
     </v-card>
   </div>
