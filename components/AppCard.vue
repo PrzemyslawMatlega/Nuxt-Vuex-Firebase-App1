@@ -20,6 +20,9 @@
         <nuxt-link tag="div" :to="`/posts/${singlePost.id}`">
           <v-btn color="orange" text>Explore</v-btn>
         </nuxt-link>
+         <nuxt-link tag="div" :to="`/posts/${singlePost.id}/edit`">
+          <v-btn color="orange" text>Edit Me</v-btn>
+        </nuxt-link>
       </v-card-actions>
     </v-card>
   </div>

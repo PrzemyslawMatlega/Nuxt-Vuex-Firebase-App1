@@ -11,7 +11,7 @@
 import AppForm from "@/components/AppForm";
 
 export default {
-  Name: "Admin",
+  Name: "Add",
   layout: "default",
   components: {
     AppForm

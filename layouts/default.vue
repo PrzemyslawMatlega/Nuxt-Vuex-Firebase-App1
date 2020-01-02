@@ -6,8 +6,8 @@
           <v-toolbar-title>AppNo1 - Nuxt/Vuex/Firebase</v-toolbar-title>
         </nuxt-link>
         <v-spacer></v-spacer>
-        <nuxt-link to="/admin" tag="div">
-          <v-btn text >Edit Panel</v-btn>
+        <nuxt-link to="/add" tag="div">
+          <v-btn text >Add New</v-btn>
         </nuxt-link>
       </v-app-bar>
     <nuxt />

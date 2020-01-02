@@ -9,9 +9,7 @@ import axios from "axios";
 
 export default {
   validate({ params, query, store }) {
- 
-      const found = store.state.allPosts.find(post => post.id == params.id)
-      return  found == undefined ? false : true
+      return store.getters.validatePath(params.id)
   },
   asyncData(context) {
     return axios
